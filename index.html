@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spherical Magic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video id="video" playsinline muted></video>
+  <div id="stars-container"></div>
+  <div id="three-container"></div>
+  <canvas id="overlay"></canvas>
+  <div id="title">Spherical Magic<span>hand-reactive particle field</span></div>
+  <button id="toggleBtn">Webcam BG</button>
+  <div id="gestureHUD"><span class="swatch" id="hudSwatch"></span><span id="hudText">Idle</span></div>
+  <div id="hint">
+    <b>One hand</b> — move &amp; rotate &nbsp;·&nbsp; <b>Two hands</b> — spread to grow, close to shrink<br>
+    <b>Pinch &amp; hold</b> — charge, release to explode &nbsp;·&nbsp; <b>Peace sign</b> — shockwave pulse<br>
+    <b>Fist</b> — freeze in place &nbsp;·&nbsp; <b>Open hand (5 fingers)</b> — rainbow mode &nbsp;·&nbsp; <b>Fingers</b> — change color
+  </div>
+  <div id="status"><span class="dot"></span><span id="statusText">Starting camera…</span></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
